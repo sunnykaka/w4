@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<short-name>w4</short-name>
+	<uri>http://www.rootrip.com/w4/function</uri>
+	
+	<function>
+		<description></description>
+		<name>getCodeMap</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.util.Map getCodeMap(java.lang.String)
+		</function-signature>
+		<example>${w4:getCodeMap(kind)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>displayCode</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.lang.String displayCode(java.lang.Long)
+		</function-signature>
+		<example>${w4:displayCode(codeId)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isCompanyUpdatable</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isCompanyUpdatable(javax.servlet.jsp.PageContext, java.lang.Long)
+		</function-signature>
+		<example>${w4:isCompanyUpdatable(pageContext, companyId)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isCompanyApprovable</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isCompanyApprovable(javax.servlet.jsp.PageContext, java.lang.Long)
+		</function-signature>
+		<example>${w4:isCompanyApprovable(pageContext, companyId)}</example>
+	</function>
+
+	<function>
+		<description></description>
+		<name>isDeclarationUpdatable</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isDeclarationUpdatable(javax.servlet.jsp.PageContext, java.lang.Long)
+		</function-signature>
+		<example>${w4:isDeclarationUpdatable(pageContext, declarationId)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isDeclarationApprovable</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isDeclarationApprovable(javax.servlet.jsp.PageContext, java.lang.Long)
+		</function-signature>
+		<example>${w4:isDeclarationApprovable(pageContext, declarationId)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>showNumber</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.lang.String showNumber(com.lianhua.document.model.Document, java.lang.String)
+		</function-signature>
+		<example>${w4:showNumber(document, 'key')}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>showValue</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.lang.String showValue(com.lianhua.document.model.Document, java.lang.String)
+		</function-signature>
+		<example>${w4:showValue(document, 'key')}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>getTip</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.lang.String getTip(com.lianhua.document.model.Document, java.lang.String)
+		</function-signature>
+		<example>${w4:getTip(document, 'key')}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>getCompanyTip</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			java.lang.String getCompanyTip(java.lang.String)
+		</function-signature>
+		<example>${w4:getCompanyTip('key')}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>showStatYear</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			int showStatYear(com.lianhua.document.model.Document)
+		</function-signature>
+		<example>${w4:showStatYear(document)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isCountyManager</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isCountyManager()
+		</function-signature>
+		<example>${w4:isCountyManager()}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isCityManager</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isCityManager()
+		</function-signature>
+		<example>${w4:isCityManager()}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>isEnterprise</name>
+		<function-class>com.lianhua.common.web.el.W4Function</function-class>
+		<function-signature>
+			boolean isEnterprise()
+		</function-signature>
+		<example>${w4:isEnterprise()}</example>
+	</function>
+</taglib>

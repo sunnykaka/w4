@@ -1,0 +1,170 @@
+body{line-height:24px;}
+dl,dt,dd{list-style:none;}
+.thL th{text-align:left;}
+.noneff{background:#ffffff !important;border:#ffffff !important;}
+.noneff p{background:#ffffff !important;border:#ffffff !important;}
+.welcome{border:none;}
+.welcome td{border:none;font-size:24px !important;line-height:48px;height:48px;}
+.buttona{display:block;height:30px;padding:0 10px;width:50px;margin:0 auto;line-height:30px;background:#d5d5d5;color:#006DA7;border:#cccccc solid 1px;}
+.buttona:hover{text-decoration:underline;background:#000000;border:#ccc solid 1px;color:#fff;}
+.table_tit{position:relative;height:40px;line-height:40px;padding:0 10px;}
+.explain{border:#ccc solid 1px;padding:10px;margin:10px;background-color:#FFC;}
+.table_tit h2{font-weight:700;}
+.table_tit a{position:absolute;top:5px;right:10px;color:#ff9900;}
+.table_tit a:hover{text-decoration:underline;}
+button{height:24px;line-height:19px;padding:0 10px;}
+.publick_bgx{background-image:url(../ico/bg_x.png);background-repeat:repeat-x;}
+.crumbs{width:100%;height:26px;background-position:0 -92px;line-height:24px;display:block;clear:both;margin-top:0;}
+.crumbs li{float:left;padding:0 5px;}
+.crumbs li a{color:#666666;}
+.tableBox{padding:0 10px;}
+table{width:100%;height:100%;}
+.serch{padding:10px 10px;background:url(../ico/fixed_bg.png) repeat-x bottom;margin-bottom:10px;height:32px;line-height:32px;}
+label{font-size:12px;}
+td,th{ vertical-align:middle;}
+.ipt{color:#f00;}
+table input[type="text"]{width:75%;_width:10%;height:22px;line-height:22px;margin-left:5px;}
+.table01 th,.table01 td{font-size:12px;font-weight:inherit;}
+thead th{background-color:#F3FBFE;color:#329ED1;font-weight:600;border-bottom:#A8CFEF solid 3px;}
+tbody th{font-weight:600;font-size:12px;color:#444444;width:20%;background:#f5f5f5;}
+tbody td tbody th{width:20%;text-align:center;font-size:12px;}
+tbody td a{color:#0099ff;}
+tbody td a:hover{text-decoration:underline;}
+.modify span{padding:0 5px;}
+td{text-align:left;font-size:14px;}
+table{border-collapse:collapse;border-spacing:0;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+th{border-right:1px solid #cccccc;border-bottom:1px solid #ccc;color:#00ACD1;height:36px;line-height:36px;}
+td{border-right:1px solid #cccccc;border-bottom:1px solid #ccc;text-align:center;}
+td button,td select{float:left;margin-left:10px;height:24px;}
+.lineTable th{width:10%;}
+.info{}
+/*alert01*/
+.alert01{width:450px;height:420px;position:absolute;top:10px;left:10px;}
+.alert01 table{width:auto; height:auto;}
+.alert01 table,.alert01 td,.alert01 th{border:none;}
+.alert01 .tit{width:450px;height:24px;position:relative;
+background: #fff;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8fc6ec', endColorstr='#6b9bbe');
+background: -webkit-gradient(linear, left top, left bottom, from(#8fc6ec), to(#6b9bbe));
+background: -moz-linear-gradient(top, #8fc6ec, #6b9bbe);
+}
+.alert01 .tit h2{color:#fff;line-height:24px;padding-left:10px;font-weight:bold;}
+.alert01 .tit .close{position:absolute;top:0;right:10px;color:#fff;font-weight:600;font-size:14px;}
+.alert01 .con{border:#86b4d7 solid 5px;border-top:none;background:#fff;width:440px;height:396px;}
+.alert01Bot{clear:both;height:30px;line-height:30px;background:#f5f5f5;text-align:center;}
+.conChil{height:366px; overflow:scroll;}
+/*列表翻页*/
+.ui-page{height:40px;margin:10px 0;}
+.ui-page-wrap{float:right;border-left:#cccccc solid 1px;}
+.ui-page-wrap .ui-page-skip{border:none;}
+.ui-page a, .ui-page b{display:block;text-decoration:none;float:left;height:38px;color:#666666;border:#cccccc solid 1px;border-left:none;line-height:38px;padding:0 20px}
+.ui-page b{font-weight:normal;}
+.ui-page-skipTo{width:32px;text-align:center;margin:0 5px;}
+.ui-page a:hover,.ui-page-cur, b.ui-page-next, b.ui-page-prev{background:#f5f5f5;}
+.ui-btn-s{height:24px;line-height:19px;padding:0 10px;}
+/*审核*/
+.audit{width:560px;margin:10px auto;border-left:#ccc solid 1px;border-right:#ccc solid 1px;background:#f5f5f5;}
+.audit .tit b{padding:0 10px;}
+.audit p{border:#cccccc solid 1px;text-align:center;clear:both;border-left:none;border-right:none;}
+.audit lable span{padding:0 5px;}
+.audit textarea{width:480px;height:153px;border:#ccc solid 1px;border-top:none;border-bottom:none;color:#666666;line-height:22px;}
+.botton_buttom{height:40px;line-height:40px;}
+.bottom_button button{margin:0 10px;}
+.botton01 button{height:36px;line-height:30px;margin:10px;}
+.botton01 p{height:inherit;line-height:inherit !important;height:inherit !important;background:#fff;}
+.botton01 .audit p{height:inherit;line-height:inherit !important;height:inherit !important;background:#fff;}
+/*****************************/
+.rootab{display:block;margin:20px auto;width:100%;}
+.rootab dt span{display:inline-block;float:left;padding:0 10px;height:28px; line-height:28px;background:#fff;color:#666;border:#ccc solid 1px;}
+.rootab dt span a{color:#666;}
+.rootab dt span a:hover{color:#ff9900;text-decoration:underline;}
+.rootab dt .hov{background:#444;color:#fff;}
+.rootab dt .hov a{color:#fff;}
+.rootab dd{display:block;background:#ffffff;border:#fff solid 1px;}
+.rootab .rooTabTitAct{color:#ab0000;background:#ffee99;}
+.rootab .rooTabTitAct a{color:#ab0000;}
+.rooTabConAct{ visibility:visible;}
+/*************************tree***********************************/
+td #mixed{text-align:left; line-height:12px;}
+.treeview, .treeview ul { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.treeview ul {
+	background-color: white;
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	background:url(../ico/treeview-default.gif) -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li { 
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: red; cursor: pointer; }
+
+.treeview li { background: url(../ico/treeview-default-line.gif) 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(../ico/treeview-default.gif); }  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+
+.treeview-red li { background-image: url(../ico/treeview-red-line.gif); }
+.treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url(../ico/treeview-red.gif); } 
+
+.treeview-black li { background-image: url(../ico/treeview-black-line.gif); }
+.treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url(../ico/treeview-black.gif); }  
+
+.treeview-gray li { background-image: url(../ico/treeview-gray-line.gif); }
+.treeview-gray .hitarea, .treeview-gray li.lastCollapsable, .treeview-gray li.lastExpandable { background-image: url(../ico/treeview-gray.gif); } 
+
+.treeview-famfamfam li { background-image: url(../ico/treeview-famfamfam-line.gif); }
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable { background-image: url(../ico/treeview-famfamfam.gif); } 
+
+.treeview .placeholder {
+	background: url(../ico/ajax-loader.gif) 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+#treeboxbox_tree{line-height:normal;}
+.table_input th,.table_input td{text-align:left;padding-left:10px;}
+.table_input label{margin-left:5px;}
+.table_input thead th{text-align:center;}
+/*.filetree li { padding: 3px 0 2px 16px; }
+.filetree span.folder, .filetree span.file { padding: 1px 0 1px 16px; display: block; }
+.filetree span.folder { background: url(../ico/folder.gif) 0 0 no-repeat; }
+.filetree li.expandable span.folder { background: url(../ico/folder-closed.gif) 0 0 no-repeat; }
+.filetree span.file { background: url(../ico/file.gif) 0 0 no-repeat; }
+*//*************************treeEnd***********************************/
+.date_upload{margin:40px 0;}
+.date_upload p{line-height:50px;height:50px;margin:20px 0;}
+.date_upload p img{margin:0px 20px;float:left;}
+.date_upload p input,.date_upload p button{margin-top:15px;}
+.date_upload p b{margin-left:90px;}

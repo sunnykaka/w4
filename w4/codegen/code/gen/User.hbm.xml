@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-18 10:23:08 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="code.gen.User" table="user">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="area" class="code.gen.Area" fetch="select">
+            <column name="areaId" />
+        </many-to-one>
+        <many-to-one name="role" class="code.gen.Role" fetch="select">
+            <column name="roleId" />
+        </many-to-one>
+        <property name="username" type="string">
+            <column name="username" length="64" not-null="true" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="128" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="gender" type="java.lang.Byte">
+            <column name="gender" />
+        </property>
+        <property name="card" type="string">
+            <column name="card" length="18" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="15" />
+        </property>
+        <property name="state" type="java.lang.Byte">
+            <column name="state" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="600" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="50" />
+        </property>
+        <property name="operatorId" type="java.lang.Long">
+            <column name="operatorId" />
+        </property>
+        <property name="lastLoginTime" type="timestamp">
+            <column name="lastLoginTime" length="19" />
+        </property>
+        <property name="type" type="java.lang.Byte">
+            <column name="type">
+                <comment>0,&#198;&#243;&#210;&#181;&#211;&#195;&#187;&#167; 1,&#199;&#248;&#185;&#220;&#192;&#237;&#212;&#177;
+                2,&#202;&#208;&#185;&#220;&#192;&#237;&#212;&#177;</comment>
+            </column>
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <set name="companies" table="company" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" />
+            </key>
+            <one-to-many class="code.gen.Company" />
+        </set>
+    </class>
+</hibernate-mapping>
