@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-18 10:23:08 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="code.gen.Company" table="company">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="contact" class="code.gen.Contact" fetch="select">
+            <column name="contactId" />
+        </many-to-one>
+        <many-to-one name="user" class="code.gen.User" fetch="select">
+            <column name="userId" />
+        </many-to-one>
+        <property name="code" type="string">
+            <column name="code" length="64" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="64" />
+        </property>
+        <property name="product1" type="string">
+            <column name="product1" length="64" />
+        </property>
+        <property name="product2" type="string">
+            <column name="product2" length="64" />
+        </property>
+        <property name="product3" type="string">
+            <column name="product3" length="64" />
+        </property>
+        <property name="categoryCode" type="java.lang.Long">
+            <column name="categoryCode" />
+        </property>
+        <property name="registerCode" type="java.lang.Long">
+            <column name="registerCode" />
+        </property>
+        <property name="accountingCode" type="java.lang.Long">
+            <column name="accountingCode" />
+        </property>
+        <property name="organizationCode" type="java.lang.Long">
+            <column name="organizationCode" />
+        </property>
+        <property name="masterNum" type="java.lang.Integer">
+            <column name="masterNum" />
+        </property>
+        <property name="bachelorNum" type="java.lang.Integer">
+            <column name="bachelorNum" />
+        </property>
+        <property name="collegeNum" type="java.lang.Integer">
+            <column name="collegeNum" />
+        </property>
+        <property name="otherNum" type="java.lang.Integer">
+            <column name="otherNum" />
+        </property>
+        <property name="employeeNum" type="java.lang.Integer">
+            <column name="employeeNum" />
+        </property>
+        <property name="operatorId" type="java.lang.Long">
+            <column name="operatorId" />
+        </property>
+        <property name="principal" type="string">
+            <column name="principal" length="32" />
+        </property>
+        <property name="preparer" type="string">
+            <column name="preparer" length="32" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="32" />
+        </property>
+        <property name="signDate" type="date">
+            <column name="signDate" length="10" />
+        </property>
+        <property name="approveState" type="java.lang.Byte">
+            <column name="approveState">
+                <comment>0,&#206;&#180;&#204;&#225;&#189;&#187; 1,&#180;&#253;&#201;&#243; 2,&#201;&#243;&#186;&#203;&#205;&#168;&#185;&#253; 3,&#205;&#203;&#187;&#216;</comment>
+            </column>
+        </property>
+        <property name="state" type="java.lang.Byte">
+            <column name="state">
+                <comment>0,&#212;&#221;&#180;&#230; 1,&#213;&#253;&#179;&#163; 2,&#210;&#209;&#201;&#190;&#179;&#253;</comment>
+            </column>
+        </property>
+        <property name="operation" type="java.lang.Byte">
+            <column name="operation">
+                <comment>0,&#208;&#194;&#189;&#168; 1,&#208;&#222;&#184;&#196; 2,&#201;&#190;&#179;&#253;</comment>
+            </column>
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="sample" type="boolean">
+            <column name="sample" not-null="true" />
+        </property>
+        <property name="businessTypeCode" type="java.lang.Long">
+            <column name="businessTypeCode" />
+        </property>
+        <property name="majorInquiry" type="boolean">
+            <column name="majorInquiry" not-null="true" />
+        </property>
+        <property name="confirmed" type="boolean">
+            <column name="confirmed" not-null="true" />
+        </property>
+        <set name="approvals" table="approval" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="companyId" />
+            </key>
+            <one-to-many class="code.gen.Approval" />
+        </set>
+        <set name="declarations" table="declaration" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="companyId" />
+            </key>
+            <one-to-many class="code.gen.Declaration" />
+        </set>
+    </class>
+</hibernate-mapping>

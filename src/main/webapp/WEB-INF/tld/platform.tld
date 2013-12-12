@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<short-name>platform</short-name>
+	<uri>http://www.rootrip.com/platform/function</uri>
+	<function>
+		<description></description>
+		<name>jsFile</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String jsFile(java.lang.String)
+		</function-signature>
+		<example>${platform:jsFile(jsFileName)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>cssFile</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String cssFile(java.lang.String)
+		</function-signature>
+		<example>${platform:cssFile(cssFileName)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>getBindResultKey</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String getBindResultKey(java.lang.String)
+		</function-signature>
+		<example>${platform:getBindResultKey(modelAttribute)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>replaceImageUploadPath</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String replaceImageUploadPath(java.lang.String)
+		</function-signature>
+		<example>${platform:replaceImageUploadPath(string)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>replaceNR</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String replaceNR(java.lang.String)
+		</function-signature>
+		<example>${platform:replaceNR(str)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>decodeHtml</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String decodeHtml(java.lang.String)
+		</function-signature>
+		<example>${platform:decodeHtml(str)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>ellipsis</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String ellipsis(java.lang.String, java.lang.Integer)
+		</function-signature>
+		<example>${platform:ellipsis(str, length)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>contains</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			boolean contains(java.lang.Object[], java.lang.Object)
+		</function-signature>
+		<example>${platform:contains(arr, obj)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>colContains</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			boolean colContains(java.util.Collection, java.lang.Object)
+		</function-signature>
+		<example>${platform:colContains(collection, obj)}</example>
+	</function>
+	
+	<function>
+		<description></description>
+		<name>params</name>
+		<function-class>com.rootrip.platform.common.web.el.PlatformFunction</function-class>
+		<function-signature>
+			java.lang.String params(javax.servlet.jsp.PageContext)
+		</function-signature>
+		<example>${platform:params(pageContext)}</example>
+	</function>
+</taglib>

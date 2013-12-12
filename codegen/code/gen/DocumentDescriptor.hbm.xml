@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-18 10:23:08 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="code.gen.DocumentDescriptor" table="document_descriptor">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="32" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="64" />
+        </property>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" />
+        </property>
+        <property name="drafter" type="string">
+            <column name="drafter" length="32" />
+        </property>
+        <property name="approver" type="string">
+            <column name="approver" length="32" />
+        </property>
+        <property name="approvalNumber" type="string">
+            <column name="approvalNumber" length="64" />
+        </property>
+        <property name="validDate" type="string">
+            <column name="validDate" length="32" />
+        </property>
+        <property name="levelCode" type="java.lang.Long">
+            <column name="levelCode">
+                <comment>107&#177;&#237;&#191;&#201;&#196;&#220;&#211;&#195;&#181;&#189;</comment>
+            </column>
+        </property>
+        <property name="units" type="string">
+            <column name="units" length="16" />
+        </property>
+        <property name="surveyCategory" type="string">
+            <column name="surveyCategory" length="64" />
+        </property>
+        <property name="majorInquiry" type="boolean">
+            <column name="majorInquiry" not-null="true" />
+        </property>
+        <set name="documents" table="document" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="descriptorId" />
+            </key>
+            <one-to-many class="code.gen.Document" />
+        </set>
+    </class>
+</hibernate-mapping>

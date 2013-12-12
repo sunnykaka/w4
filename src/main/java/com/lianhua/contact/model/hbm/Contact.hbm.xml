@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-3-23 11:34:39 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.lianhua.contact.model.Contact" table="contact">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="location" type="string">
+            <column name="location" />
+        </property>
+        <property name="areaCode" type="string">
+            <column name="areaCode" length="10" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="20" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="20" />
+        </property>
+        <property name="phoneExt" type="string">
+            <column name="phoneExt" length="20" />
+        </property>
+        <property name="fax" type="string">
+            <column name="fax" length="20" />
+        </property>
+        <property name="zipCode" type="string">
+            <column name="zipCode" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="64" />
+        </property>
+        <property name="website" type="string">
+            <column name="website" length="128" />
+        </property>
+        <property name="cityId" type="java.lang.Long">
+            <column name="cityId" />
+        </property>
+		<many-to-one name="city" cascade="none" insert="false" update="false" fetch="select">
+            <column name="cityId" />
+        </many-to-one>
+        <property name="countyId" type="java.lang.Long">
+            <column name="countyId" />
+        </property>
+		<many-to-one name="county" cascade="none" insert="false" update="false" fetch="select">
+            <column name="countyId" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

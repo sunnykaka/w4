@@ -1,0 +1,25 @@
+.area01{clear:both;}
+.public_bg{ background-image:url(../ico/adminbg.png);background-repeat:no-repeat;}
+.publick_bgx{background-image:url(../ico/bg_x.png);background-repeat:repeat-x;}
+.publick_bgy{background-image:url(../ico/repeat_y.png);background-repeat:repeat-y;}
+.top{width:100%;height:82px;position:relative;background-position:0px 0px;}
+.logo{height:82px;width:509px;float:left;background-position:-43px -117px;}
+.top_nav{height:82px;width:506px;background-position:-99px 0;float:right;position:absolute;right:0;}
+.top_nav li{float:left;padding:10px}
+.top_nav li a{color:#666666; text-decoration:underline;}
+.top_nav li span{padding:0 5px;}
+/*sidbar*/
+.sidbar{width:230px;height:100%;color:#215c6d;line-height:24px;}
+.sidbar a{color:#215c6d;}
+.sidbar dl{padding-top:10px;}
+.sidbar dl .act{background:url(../ico/adminbg.png) no-repeat 0px -292px;color:#ffffff;}
+.sidbar dl .act a{color:#ffffff;}
+.sidbar a:hover{text-decoration:underline;}
+.sidbar dt{padding-left:30px;cursor:pointer;}
+.sidbar .close{background:url(../ico/adminbg.png) no-repeat -730px -86px;}
+.sidbar .open{background:url(../ico/adminbg.png) no-repeat -730px -108px;}
+.sidbar dd a{padding-left:25px; margin-left:10px;background:url(../ico/adminbg.png) no-repeat -730px -131px ;font-weight:normal;}
+.sidbar dd{display:none;}
+/*iframe_box*/
+.areaRight{ vertical-align:top;}
+.iframe_box{width:100%;clear:both; ov}

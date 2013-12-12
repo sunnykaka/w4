@@ -1,0 +1,36 @@
+.banner01{height:378px;overflow:hidden;}
+.bannerCon li{float:left;position:absolute;}
+.con{height:370px; background-position:0px -367px;color:#666;background-color:#ffffff;padding:10px 0;}
+/*.logo02{width:308px;height:236px;background-position:0 -119px;position:relative;top:-67px;}
+*/
+.con_area01{width:233px;float:left;padding:0 8px;}
+.con_area02{width:460px;float:left;padding:0 8px;}
+.con_area03{width:218px;float:left;padding:0 8px;}
+.notice{margin-top:20px;}
+.login{background-position:0 -137px;height:247px;}
+.login dt h2{color:#fff;font-size:14px;height:30px;line-height:30px;padding:0 10px;}
+.login ul{padding:20px;}
+.login li{ padding-bottom:5px;height:28px;line-height-28px;}
+.login input[type="text"]{width:120px;}
+.login button{height:28px;width:72px;background:url(../ico/login_button.png) center no-repeat;border:none;margin-left:20px;margin-top:20px;}
+.news{line-height:24px;border:#ccc solid 1px;padding:1px;height:167px;}
+.news .tit{/*background-position:0 28px;padding-bottom:2px;*/position:relative;}
+.news .tit .mor{position:absolute;right:0;top:0;}
+.news dt h2{display:block;height:26px;line-height:26px;width:70px;font-family:"微软雅黑";font-weight:700;background-position:-544px -122px;text-align:center;color:#34a0d1;font-size:14px;font-weight:normal;}
+.news a{color:#666;}
+.news a:hover{text-decoration:underline;}
+.news li{position:relative;padding-right:10px;}
+.news li a{position:relative;padding-left:20px;background:url(../ico/icon_arrow_01.png) 10px center no-repeat;}
+.news ul{padding:10px 0;}
+.news ul a span{position:absolute;right:10px;}
+.contact{margin-top:29px;width:307px;height:90px;background-position:-653px -122px;}
+.contact p{padding:5px;line-height:24px;}
+.tit01{background-position:-1px -431px;height:169px;}
+.news li{display:block;clear:both;}
+.news li a{padding-right:10px;float:left;}
+.news li .dath{float:right;}
+.arrow_hot{background:url("../ico/icon_arrow_hot.gif") no-repeat scroll right 12px transparent;width:22px;height:22px;float:left;display:block;}
+.contant01{font-family:"微软雅黑";font-size:14px;margin-top:20px;}
+.contant01 .tit{font-size:14px;line-height:28px;}
+.contant01 ul{padding:5px 0;}
+.contant01 dd li{line-height:24px;}

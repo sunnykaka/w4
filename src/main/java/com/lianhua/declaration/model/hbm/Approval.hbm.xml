@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-3-27 13:37:50 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.lianhua.declaration.model.Approval" table="approval">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="state" type="string">
+            <column name="state" length="64">
+                <comment>0,&#204;&#225;&#189;&#187;&#201;&#234;&#177;&#168; 1,&#210;&#209;&#201;&#243;&#186;&#203; 2,&#205;&#203;&#187;&#216;&#208;&#222;&#184;&#196;</comment>
+            </column>
+        </property>
+        <property name="step" type="string">
+            <column name="step" length="64">
+                <comment>0,&#198;&#243;&#210;&#181;&#204;&#238;&#177;&#168; 1,&#199;&#248;&#201;&#243;&#186;&#203; 2,&#202;&#208;&#201;&#243;&#186;&#203;</comment>
+            </column>
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="256" />
+        </property>
+        <property name="type" type="java.lang.Byte">
+            <column name="type">
+                <comment>0,&#198;&#243;&#210;&#181;&#201;&#243;&#197;&#250; 1,&#214;&#177;&#177;&#168;&#201;&#243;&#197;&#250;</comment>
+            </column>
+        </property>
+        <property name="reason" type="string">
+            <column name="reason" length="128">
+                <comment>0,&#198;&#243;&#210;&#181;&#200;&#235;&#191;&#226; 1,&#201;&#190;&#179;&#253;&#198;&#243;&#210;&#181;</comment>
+            </column>
+        </property>
+        <many-to-one name="operator" cascade="all">
+        	<column name="operatorId"/>
+        </many-to-one>
+        <property name="declarationId" type="java.lang.Long">
+        	<column name="declarationId" />
+        </property>
+        <many-to-one name="declaration"  cascade="none" insert="false" update="false" fetch="select">
+            <column name="declarationId" />
+        </many-to-one>
+        <property name="companyId" type="java.lang.Long">
+        	<column name="companyId" />
+        </property>
+        <many-to-one name="company"  cascade="none" insert="false" update="false" fetch="select">
+            <column name="companyId" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
